@@ -1,30 +1,229 @@
 *
 {
+  /*
   outline: 1px solid green;  
-  
-  
+  */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html{
-    
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding/border included in width */
 }
 
 #navbar
 {
-    background-color: #1F2937;
     height: 100px;
+
+    background-color: #1F2937;
     border: 3px solid white;
     border-radius: 10px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; /*how to manipulate content that parent directly controls*/
+
+    
+    height: 100%;
+}
+
+header ul
+{
+    display: flex;
+    list-style-type: none;
+    padding-left: 40%;  /*absolutely horrible way to do this but works for now*/
+}
+
+header ul li
+{
+    margin: 0 0 0 30px;
+    padding: 5px 5px 5px 5px;
+    
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+header ul li a
+{
+    color:white;
+    text-decoration: none;
+    justify-self: center;
+    font-weight: 500;
+}
+
 
 #navbar-image
 {
-    height: 30px;
+    height: 60%;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 #heroSection 
 {
     background-color: #1F2937;
+    height: 600px;
+    
+    display: flex;
+    justify-content: center;    /*horizontal*/
+    align-items: center;        /*vertical*/
 }
 
+#heroTextContainer
+{
+    justify-content: left;
+    margin-right: 30px;
+}
 
+#heroImage
+{
+    height: 50%;
+}
+
+#heroTextContainer h1, p
+{
+    color:white;
+}
+
+button
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 80px;
+
+    /*block display is used with self-justification*/
+    display: block;
+    justify-self: center;
+}
+
+#infoNodeContainer
+{
+    display: flex;
+    justify-content: center;    /*horizontal*/
+    align-items: center;        /*vertical*/
+
+    justify-self: center;
+    
+    width: 60%;
+    margin: 50px 0px 50px 0px;  /*top right bottom left*/
+}
+
+#bodyText
+{
+    display: block;
+    justify-self: center;
+}
+
+.kita
+{
+    margin-top: 20px;
+    width: 200px;
+    border:3px solid #3882F6;
+    border-radius: 10px;
+
+    display: block;
+    justify-self: center;
+}
+
+#infoNodeContainer p
+{
+    color:#1F2937;
+    font-weight: 600;
+
+    width:60%;
+    justify-self: center;
+    font-style: italic;
+}
+
+#testimonial
+{
+    margin: 50px 0px 50px 0px;  /*top right bottom left*/
+    background-color: #e5e7eb;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#testimonialContainer
+{
+    height: 100%;
+    width: 60%;
+}
+
+#testimonialContainer h2
+{
+    justify-self: right;   
+    margin-right: 50px;;
+}
+
+#testimonial h1
+{
+    font-size: 36px;
+    font-weight: 300;
+    color:#1F2937;
+}
+
+#callToAction
+{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#callToAction button
+{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#callToActionContainer
+{
+    height: 60%;
+    width:60%;
+    background-color: #3882F6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#callToActionTextContainer
+{
+    margin-right: 50px;
+}
+
+#callToAction h3
+{
+    color: white
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #1F2937;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p
+{
+    justify-self: center;
+}
